@@ -62,6 +62,8 @@ jdkInstall() {
     echo "export PATH=\${JAVA_HOME}/bin:\$PATH" >>/etc/profile
     echo -e "${blue}刷新环境变量${cn}\n"
 
+    source /etc/profile
+
     java -version
 
     successInstallJavaEnv=$?
