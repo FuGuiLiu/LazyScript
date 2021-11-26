@@ -113,6 +113,11 @@ jenkinsInstall() {
     #手动指定Jenkins Java环境,因为我们安装的jdk环境不在它这个candidates候选环境变量列表中 这里我是用 # 符号分割避免 / 路径需要转义
     sed -i "s#candidates=\"#candidates=\"\n${jdkSourcePath}/jdk-11.0.13/bin/java#g" /etc/init.d/jenkins
 
+    # 安装一些字体,防止Jenkins  说这些字体之类的错误 Djava.awt.headless 亲测有效
+    yum install dejavu-sans-fonts
+    yum install fontconfig
+    yum install xorg-x11-server-Xvfb
+
     #启动Jenkins
     systemctl start jenkins
 
