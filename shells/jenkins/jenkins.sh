@@ -116,9 +116,9 @@ jenkinsInstall() {
     sed -i "s#candidates=\"#candidates=\"\n${jdkSourcePath}/jdk-11.0.13/bin/java#g" /etc/init.d/jenkins
 
     # 安装一些字体,防止Jenkins  说这些字体之类的错误 Djava.awt.headless 亲测有效
-    yum install dejavu-sans-fonts
-    yum install fontconfig
-    yum install xorg-x11-server-Xvfb
+    yum install -y dejavu-sans-fonts
+    yum install -y fontconfig
+    yum install -y xorg-x11-server-Xvfb
 
     #启动Jenkins
     systemctl start jenkins
