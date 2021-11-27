@@ -6,7 +6,7 @@
     - **一键脚本**
 
         ```bash
-        bash <(curl https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/server.sh)
+        bash <(curl https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/serverInitialize/server.sh)
         ```
 
 
@@ -16,5 +16,5 @@
     - **一键脚本**
 
         ```bash
-        bash <(curl https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/jenkins.sh)
+        bash <(curl https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/jenkins/jenkins.sh)
         ```
