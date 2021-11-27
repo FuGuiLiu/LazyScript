@@ -6,7 +6,7 @@
     - **一键脚本**
 
         ```bash
-        bash <(curl https://raw.githubusercontent.com/FuGuiLiu/autoInitialServer/master/autoInitial.sh)
+        bash <(curl https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/server.sh)
         ```
 
 
@@ -16,5 +16,5 @@
     - **一键脚本**
 
         ```bash
-        bash <(curl https://raw.githubusercontent.com/FuGuiLiu/autoInitialServer/master/autoInitial.sh)
+        bash <(curl https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/jenkins.sh)
         ```
