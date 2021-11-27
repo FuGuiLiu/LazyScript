@@ -11,9 +11,9 @@ cn='\033[0m'
 # 选择安装和卸载
 echo -e "${blue}欢迎使用服务器初始化脚本${cn}"
 echo -e "$blue------------------------------------------------------------------------$cn"
-echo -e "$blue| 服务器一键修改Root密码、SSH端口号、关闭禁用防火墙、删除冗余组件、             |$cn"
-echo -e "$blue| 使用时请使用Root权限账号操作 sudo -i                                     |$cn"
-echo -e "$blue| 有问题联系作者: https://github.com/FuGuiLiu || liu997121@gmail.com      |$cn"
+echo -e "$blue| 服务器一键修改Root密码、SSH端口号、关闭禁用防火墙、删除冗余组件、$cn"
+echo -e "$blue| 使用时请使用Root权限账号操作 sudo -i$cn"
+echo -e "$blue| 有问题联系作者: https://github.com/FuGuiLiu || liu997121@gmail.com$cn"
 echo -e "$blue------------------------------------------------------------------------$cn"
 
 echo -e "${blue}检查当前系统.......${cn}"
