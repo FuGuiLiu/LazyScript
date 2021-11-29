@@ -7,7 +7,6 @@
     <list default="true" id="24a1254d-071c-4e5a-9f5d-6ce2daba41ab" name="Default Changelist" comment="readme一键脚本">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shells/jenkins/jenkins.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shells/jenkins/jenkins.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shells/serverInitialize/server.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shells/serverInitialize/server.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,25 +104,14 @@
     </key>
   </component>
   <component name="RunManager" selected="Maven.Install">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test" type="BashConfigurationType" factoryName="Bash">
       <module name="LazyScript" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="" />
       <option name="PROJECT_INTERPRETER" value="true" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../LazyScript\.." />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$\.." />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../LazyScript\shells\Jenkins\jenkins.sh" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$\shells\Jenkins\jenkins.sh" />
       <option name="PARAMETERS" value="" />
       <option name="outputCharset" value="UTF-8" />
       <RunnerSettings bashdbVersion="Automatic" bashPathMapper="Automatic" RunnerId="pro.bashsupport.shDebugRunner" />
@@ -352,6 +340,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Legacy BashSupport.Test" />
       <item itemvalue="Maven.Install" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.10" />
     </list>
@@ -381,6 +370,7 @@
       <workItem from="1637936273836" duration="798000" />
       <workItem from="1637937223646" duration="200000" />
       <workItem from="1637973114040" duration="7682000" />
+      <workItem from="1638144056125" duration="3645000" />
     </task>
     <task id="LOCAL-00001" summary="Jenkins 自动安装脚本完结">
       <created>1637934901373</created>

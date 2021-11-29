@@ -36,7 +36,7 @@ jdkInstall() {
 	#CentOS系统相关操作
 	if [ "$release" == "centos" ]; then
 		#下载jdk安装包
-		wget -P $jdkSourcePath https://www.dropbox.com/s/bttx2jhp3po4r3e/jdk-11.0.13_linux-x64_bin.tar.gz
+		wget -P $jdkSourcePath https://www.dropbox.com/s/bttx2jhp3po4r3e/jdk-11.0.13_linux-x64_bin.tar.gz --no-check-certificate
 		tar -zxvf ${jdkSourcePath}/jdk-11.0.13_linux-x64_bin.tar.gz -C ${jdkSourcePath}
 		echo "export JAVA_HOME=${jdkSourcePath}/jdk-11.0.13" >>/etc/profile
 		echo "export JRE_HOME=\${JAVA_HOME}/jre" >>/etc/profile
@@ -70,7 +70,8 @@ gitInstall() {
 jenkinsInstall() {
 	if [ "$release" == "centos" ]; then
 		echo -e "${blue}下载Jenkins安装包${cn}"
-		wget -P /opt/jenkins https://mirrors.tuna.tsinghua.edu.cn/jenkins/redhat-stable/jenkins-2.263.1-1.1.noarch.rpm
+		# 不检查证书
+		wget -P /opt/jenkins https://mirrors.tuna.tsinghua.edu.cn/jenkins/redhat-stable/jenkins-2.263.1-1.1.noarch.rpm --no-check-certificate
 
 		echo -e "${blue}开始解压安装.......${cn}"
 		cd /opt/jenkins && rpm -ivh jenkins-2.263.1-1.1.noarch.rpm
