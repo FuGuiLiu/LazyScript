@@ -21,10 +21,14 @@
       
 ## 小火箭地址
 
-点击小火箭配置右上角+号导入url,输入以下地址即可
+点击小火箭配置右上角+号导入url,输入以下地址即可(1.使用中 2.未使用)
 
 ```java
 https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/shadowrocket/shadowrocket_rules.conf
+```
+
+```java
+https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/shadowrocket/shadowrocket_rules_2.conf
 ```
 
 ## Quantumult

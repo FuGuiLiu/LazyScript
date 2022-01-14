@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24a1254d-071c-4e5a-9f5d-6ce2daba41ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/shells/quantumult" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shells/shadowrocket" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -98,6 +98,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\MrLiu\WorkSpace\LazyScript\shells\shadowrocket" />
       <recent name="D:\T54099\Desktop\WorkSPace\LazyScript\shells\quantumult" />
       <recent name="D:\T54099\Desktop\WorkSPace\LazyScript\shells\shadowrocket" />
     </key>
@@ -453,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642165161732</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="新增别的配置">
+      <created>1642165911653</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1642165911653</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +475,8 @@
     <MESSAGE value="搬瓦工遇到证书校验问题" />
     <MESSAGE value="docker 一键脚本" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="新增别的配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增别的配置" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
