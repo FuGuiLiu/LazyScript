@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24a1254d-071c-4e5a-9f5d-6ce2daba41ab" name="Default Changelist" comment="readme一键脚本">
+    <list default="true" id="24a1254d-071c-4e5a-9f5d-6ce2daba41ab" name="Default Changelist" comment="搬瓦工遇到证书校验问题">
+      <change afterPath="$PROJECT_DIR$/shells/quantumult/quantumult_配置规则包.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shells/shadowrocket/shadowrocket规则包.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shells/jenkins/jenkins.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shells/jenkins/jenkins.sh" afterDir="false" />
     </list>
@@ -86,7 +88,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ryderSite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shells/quantumult" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -98,20 +100,35 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\T54099\Desktop\WorkSPace\LazyScript\shells\quantumult" />
+      <recent name="D:\T54099\Desktop\WorkSPace\LazyScript\shells\shadowrocket" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\T54099\Desktop\IDEAWorkSPace\LazyScript\shells\serverInitialize" />
       <recent name="D:\T54099\Desktop\IDEAWorkSPace\LazyScript\shells\Jenkins" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.Install">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="BashConfigurationType" factoryName="Bash">
       <module name="LazyScript" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="" />
       <option name="PROJECT_INTERPRETER" value="true" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$\.." />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../LazyScript\.." />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$\shells\Jenkins\jenkins.sh" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../LazyScript\shells\Jenkins\jenkins.sh" />
       <option name="PARAMETERS" value="" />
       <option name="outputCharset" value="UTF-8" />
       <RunnerSettings bashdbVersion="Automatic" bashPathMapper="Automatic" RunnerId="pro.bashsupport.shDebugRunner" />
@@ -340,7 +357,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Legacy BashSupport.Test" />
       <item itemvalue="Maven.Install" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.10" />
     </list>
@@ -370,7 +386,16 @@
       <workItem from="1637936273836" duration="798000" />
       <workItem from="1637937223646" duration="200000" />
       <workItem from="1637973114040" duration="7682000" />
-      <workItem from="1638144056125" duration="3645000" />
+      <workItem from="1638144056125" duration="8068000" />
+      <workItem from="1638233699478" duration="599000" />
+      <workItem from="1639206586819" duration="1601000" />
+      <workItem from="1639529726057" duration="880000" />
+      <workItem from="1639530627615" duration="5440000" />
+      <workItem from="1640583887161" duration="650000" />
+      <workItem from="1641348297792" duration="6524000" />
+      <workItem from="1641479674936" duration="599000" />
+      <workItem from="1641516819072" duration="598000" />
+      <workItem from="1642146470887" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="Jenkins 自动安装脚本完结">
       <created>1637934901373</created>
@@ -414,7 +439,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637974448873</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="搬瓦工遇到证书校验问题">
+      <created>1638159298558</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638159298558</updated>
+    </task>
+    <task id="LOCAL-00008" summary="docker 一键脚本">
+      <created>1641352868292</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641352868292</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +464,9 @@
     <MESSAGE value="Jenkins 自动安装脚本完结&#10;修复刷新环境变量" />
     <MESSAGE value="设置自动默认 yes选择" />
     <MESSAGE value="readme一键脚本" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme一键脚本" />
+    <MESSAGE value="搬瓦工遇到证书校验问题" />
+    <MESSAGE value="docker 一键脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker 一键脚本" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

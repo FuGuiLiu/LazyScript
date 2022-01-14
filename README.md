@@ -18,3 +18,19 @@
         ```bash
         bash <(curl https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/jenkins/jenkins.sh)
         ```
+      
+## 小火箭地址
+
+点击小火箭配置右上角+号导入url,输入以下地址即可
+
+```java
+
+```
+
+## Quantumult
+
+点击右下角那个风扇,滑倒最下面,下载该文件然后导入
+
+```java
+
+```
