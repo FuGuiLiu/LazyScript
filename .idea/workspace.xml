@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24a1254d-071c-4e5a-9f5d-6ce2daba41ab" name="Default Changelist" comment="搬瓦工遇到证书校验问题">
-      <change afterPath="$PROJECT_DIR$/shells/quantumult/quantumult_配置规则包.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shells/shadowrocket/shadowrocket规则包.txt" afterDir="false" />
+    <list default="true" id="24a1254d-071c-4e5a-9f5d-6ce2daba41ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shells/jenkins/jenkins.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shells/jenkins/jenkins.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shells/quantumult/quantumult_配置规则包.conf" beforeDir="false" afterPath="$PROJECT_DIR$/shells/quantumult/quantumult_rules.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shells/shadowrocket/shadowrocket规则包.txt" beforeDir="false" afterPath="$PROJECT_DIR$/shells/shadowrocket/shadowrocket_rules.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,17 +109,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Maven.Install">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test" type="BashConfigurationType" factoryName="Bash">
       <module name="LazyScript" />
       <option name="INTERPRETER_OPTIONS" value="" />
