@@ -36,5 +36,5 @@ https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/shadowrocket
 点击右下角那个风扇,滑倒最下面,下载该文件然后导入
 
 ```java
-https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/quantumult/quantumult_%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99%E5%8C%85.conf
+https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_diy.conf
 ```
