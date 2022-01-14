@@ -24,7 +24,7 @@
 点击小火箭配置右上角+号导入url,输入以下地址即可
 
 ```java
-
+https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/shadowrocket/shadowrocket%E8%A7%84%E5%88%99%E5%8C%85.txt
 ```
 
 ## Quantumult
@@ -32,5 +32,5 @@
 点击右下角那个风扇,滑倒最下面,下载该文件然后导入
 
 ```java
-
+https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/quantumult/quantumult_%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99%E5%8C%85.conf
 ```
