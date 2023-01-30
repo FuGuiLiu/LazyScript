@@ -60,7 +60,7 @@ result=$?
 until
 	[ $result -eq 0 ]
 do
-	echo -e "${red}两次密码不一致: [请重新输入 (按任意键继续)或者输入 q 退出(quit)]<希望你不是杠精 (っ╥╯﹏╰╥c) >${cn}"
+	echo -e "${red}两次密码不一致: [请重新输入 (按任意键继续)或者输入 q 退出(quit)]<希望你不是杠精 :)
 
 	read -p "" isQuit
 	if [[ $isQuit == "q" || $isQuit == "Q" ]]; then
