@@ -8,7 +8,6 @@ cn='\033[0m'
 # check root 检查权限
 if [ 0 == $UID ]; then
 	echo -e "${OK} ${GreenBG} 当前用户是root用户，进入安装流程 ${Font}"
-	sleep 3
 else
 	echo -e "${red} 当前用户不是root用户，请切换到root用户后重新执行脚本 ${cn}"
 	exit 1
