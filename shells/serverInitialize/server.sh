@@ -6,7 +6,13 @@ blue='\033[0;34m'
 cn='\033[0m'
 
 # check root 检查权限
-[[ $EUID -ne 0 ]] && echo -e "${red}错误:${cn} 必须使用root用户运行此脚本！\n" && exit 1
+if [ 0 == $UID ]; then
+	echo -e "${OK} ${GreenBG} 当前用户是root用户，进入安装流程 ${Font}"
+	sleep 3
+else
+	echo -e "${red} 当前用户不是root用户，请切换到root用户后重新执行脚本 ${cn}"
+	exit 1
+fi
 
 # 选择安装和卸载
 echo -e "${blue}欢迎使用服务器初始化脚本${cn}"
@@ -146,7 +152,6 @@ isReboot() {
 		echo -e "${yellow}bye bye...${cn}" && exit 1
 	fi
 }
-
 ### 根据不同的系统进行操作
 
 #Ubuntu系统相关操作
