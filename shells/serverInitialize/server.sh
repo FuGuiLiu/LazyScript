@@ -13,7 +13,7 @@ echo -e "${blue}欢迎使用服务器初始化脚本${cn}"
 echo -e "$blue------------------------------------------------------------------------$cn"
 echo -e "$blue| 服务器一键修改Root密码、SSH端口号、关闭禁用防火墙、删除冗余组件、$cn"
 echo -e "$blue| 使用时请使用Root权限账号操作 sudo -i$cn"
-echo -e "$blue| 有问题联系作者: https://github.com/FuGuiLiu || ryder@ryder.eu.org$cn"
+echo -e "$blue| 有问题联系作者: https://github.com/FuGuiLiu || liu997121@gmail.com$cn"
 echo -e "$blue------------------------------------------------------------------------$cn"
 
 echo -e "${blue}检查当前系统.......${cn}"
@@ -41,42 +41,38 @@ echo -e "${blue}当前系统版本--->${cn}:${red}$release${cn}"
 
 #函数
 
-#修改root密码
 changeRootPasswordInfo() {
+	echo -ne "${red}请输入新的Root密码:${cn}\n"
+	read -s password1
+	echo -ne "\n${red}请再次输入新的Root密码:${cn}\n"
+	read -s password2
+	echo -ne "\n"
+	until [ "$password1" == "$password2" ]; do
+		echo -e "${red}两次密码不一致: [请重新输入 (按任意键继续)或者输入 q 退出(quit)]${cn}"
+		read -p "" isQuit
+		if [[ $isQuit == "q" || $isQuit == "Q" ]]; then
+			exit 1
+		fi
 
-	# 设置允许使用root用户登录
-	sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config
-	echo -e "${blue}设置允许Root账号登录......${cn}"
+		echo -ne "\n${red}请输入新的Root密码:${cn}"
+		read -s password1
+		echo -ne "\n${red}请再次输入新的Root密码:${cn}"
+		read -s password2
+		echo -ne "\n"
+	done
+	echo -e "${blue}设置Root密码.......${cn}"
+	echo "root:$password1" | sudo chpasswd root
 
-	# 设置启动密码认证
-	sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config
-	echo -e "${blue}设置允许Root密码校验......${cn}"
+	echo -e "${blue}允许Root账号登录......${cn}"
+	sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
-	echo -e "${red}设置Root密码.......${cn}"
-  passwd
+	echo -e "${blue}启用Root密码校验......${cn}"
+	sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 
-result=$?
-
-until
-	[ $result -eq 0 ]
-do
-	echo -e "${red}两次密码不一致: [请重新输入 (按任意键继续)或者输入 q 退出(quit)]<希望你不是杠精 :)
-
-	read -p "" isQuit
-	if [[ $isQuit == "q" || $isQuit == "Q" ]]; then
-		exit 1
-	fi
-
-	if [[ $isQuit != "q" || $isQuit != "Q" ]]; then
-		passwd
-		result=$?
-	fi
-done
-
-
-	echo -e "${blue}重启ssh服务.......${cn}"
-	systemctl restart sshd.service
+	echo -e "${blue}重启SSH服务.......${cn}"
+	sudo service sshd restart
 }
+
 #Ubuntu相关配置
 ubuntu() {
 	#安装系统相关依赖
@@ -179,7 +175,6 @@ if [ "$release" == "centos" ]; then
 	#  判断用户是否自动重启
 	isReboot
 fi
-
 
 #Debian系统相关操作
 if [ "$release" == "debian" ]; then
