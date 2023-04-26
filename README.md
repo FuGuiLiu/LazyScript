@@ -6,7 +6,7 @@
     - **一键脚本**
 
         ```bash
-        bash <(curl https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/serverInitialize/server.sh)
+        sudo curl -s https://raw.githubusercontent.com/FuGuiLiu/LazyScript/master/shells/serverInitialize/server.sh -o server.sh && sudo chmod +x server.sh && sudo bash ./server.sh
         ```
 
 
